@@ -1,0 +1,107 @@
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+            <TextView
+                android:text="TEA 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/title"
+                android:gravity="center"
+                android:textStyle="bold" android:textColor="@android:color/holo_orange_dark"
+                android:fontFamily="sans-serif"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:layout_gravity="right"
+                    android:enabled="true"
+                    android:id="@+id/btnSettings"/>
+
+
+        </LinearLayout>
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:orientation="vertical"
+         android:paddingHorizontal="20dp"/>
+
+            <TextView
+                android:text="Pseudo"
+                android:paddingTop="10dp"
+                android:textStyle="bold" android:textColor="@android:color/holo_orange_dark"
+                android:layout_width="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content" android:id="@+id/tvPseudo"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:maxLength="9"
+                android:background="@android:color/holo_orange_dark"
+                android:ems="10"
+                android:id="@+id/etPseudo"/>
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:gravity="bottom"
+         android:paddingBottom="20dp"
+         android:layout_weight="1">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Valider"
+             android:layout_gravity="center"
+             android:enabled="true"
+             android:id="@+id/btnValider"/>
+
+         <TextView
+             android:id="@+id/tvDernierPseudo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Dernier pseudo enregistré : " />
+
+     </LinearLayout>
+
+ </LinearLayout>
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
